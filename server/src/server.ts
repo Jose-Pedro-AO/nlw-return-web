@@ -16,6 +16,6 @@ App.use(cors());
 App.use(express.json());
 App.use(routes);
 
-App.listen(3333, () => {
+App.listen(process.env.PORT || 3333, () => {
   console.log('Http server running');
 });
